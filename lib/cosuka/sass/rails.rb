@@ -3,7 +3,8 @@ require "cosuka/sass/rails/version"
 module Cosuka
   module Sass
     module Rails
-      # Your code goes here...
+      class Engine < ::Rails::Engine
+      end
     end
   end
 end
