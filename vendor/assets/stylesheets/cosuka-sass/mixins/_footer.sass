@@ -1,0 +1,16 @@
+@mixin cosuka-footer($bgColor:#ddd1c1, $color:rgba(0,0,0,0.5) ,$linkColor:rgba(0,0,0,0.5))
+  padding-top: 40px
+  padding-bottom: 40px
+  background: $bgColor
+  color: $color
+  text-align: center
+  a
+    color: $linkColor
+    &:hover
+      color: $linkColor
+      text-decoration: underline
+  ul.cosuka-vertical
+    list-style: none
+    li
+      display: inline
+      padding-left: 10px
