@@ -18,7 +18,27 @@
       float: right
       clear: both
   .controls
+    label.checkbox
+      width: auto
+      padding: 0 0 0 20px
+      background: none
+      margin-top: 0
+      font-weight: normal
+    label.error
+      width: auto
+      padding: 0
+      background: none
+      margin-top: 0
+      font-weight: normal
+      color: #d3381c
+    label.radio
+      margin: 0 $inputDefaultMargin
+      width: 80px
+      background: inherit
+      padding: 10px
+  .controls
     display: block
+    padding: 7px 0
     margin-left: $labelWidth + $inputDefaultMargin
     // Please change the Inputs order in config/initializers/simple_form_bootstrap.rb
       ba.use :hint,  wrap_with: { tag: 'p', class: 'help-block' }
@@ -34,20 +54,27 @@
     span.help-inline
       color: $cosuka_danger_dark
   input, select
-    width: 300px
     display: block
   .form-actions
     margin-left: $labelWidth + $inputDefaultMargin
     margin-top: $inputDefaultMargin * 2
+  input[type='radio'].form-control
+    width: 1em
+    height: 1em
   input[type="submit"]
     margin: 0
-    line-height: 2.5
-    font-size: 115%
+    line-height: 2
+    font-size: 1.1em
+    display: inline
+    width: 100%
   .form-group
-    margin-bottom: 25px
+    margin-bottom: 10px
   .confirmations
     margin-left: $labelWidth + $inputDefaultMargin
     margin-bottom: $inputDefaultMargin
+    a
+      color: #222
+      text-decoration: underline
 
 @mixin cosuka-simple-form-bootstrap-login($inputWidth:360px)
   $inputDefaultMargin: 10px
