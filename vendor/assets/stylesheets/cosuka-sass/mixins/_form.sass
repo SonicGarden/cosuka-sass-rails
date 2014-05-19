@@ -1,4 +1,4 @@
-@mixin cosuka-simple-form-bootstrap-default($width:200px, $labelColor:#EFEFEF)
+@mixin cosuka-simple-form-bootstrap-horizontal($width:200px, $labelColor:#EFEFEF)
   $labelWidth: $width
   $inputDefaultMargin: 10px
   label
@@ -40,10 +40,6 @@
     display: block
     padding: 7px 0
     margin-left: $labelWidth + $inputDefaultMargin
-    // Please change the Inputs order in config/initializers/simple_form_bootstrap.rb
-      ba.use :hint,  wrap_with: { tag: 'p', class: 'help-block' }
-      ba.use :input
-      ba.use :error, wrap_with: { tag: 'span', class: 'help-inline' }
     p.help-block
       margin-bottom: $inputDefaultMargin
   .control-group
@@ -76,7 +72,7 @@
       color: #222
       text-decoration: underline
 
-@mixin cosuka-simple-form-bootstrap-login($inputWidth:360px)
+@mixin cosuka-simple-form-bootstrap-vertical($inputWidth:360px)
   $inputDefaultMargin: 10px
   border: 1px solid silver
   padding: 40px
@@ -85,10 +81,6 @@
     width: auto
   .controls
     margin-bottom: $inputDefaultMargin
-    // Please change the Inputs order in config/initializers/simple_form_bootstrap.rb
-      ba.use :hint,  wrap_with: { tag: 'p', class: 'help-block' }
-      ba.use :input
-      ba.use :error, wrap_with: { tag: 'span', class: 'help-inline' }
     p.help-block
       margin: 0
   .control-group.error
