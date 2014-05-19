@@ -6,19 +6,24 @@ TODO: Write a gem description
 
 Add this line to your application's Gemfile:
 
-    gem 'cosuka-sass-rails'
+    gem 'cosuka-sass-rails', git: 'git://github.com/SonicGarden/cosuka-sass-rails'
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install cosuka-sass-rails
-
 ## Usage
 
-TODO: Write usage instructions here
+1. Copy simple_form_bootstrap.rb
+https://github.com/SonicGarden/aws-backup-checker/blob/master/config/initializers/simple_form_bootstrap3.rb
+
+2. Customize Mappings
+https://github.com/SonicGarden/aws-backup-checker/blob/master/app/assets/stylesheets/_customable_cosuka.css.sass
+
+3. Import customable_cosuka and Avoid require_tree
+https://github.com/SonicGarden/aws-backup-checker/blob/master/app/assets/stylesheets/application.sass
+bootstrapより前にimportすること
+
 
 ## Contributing
 
