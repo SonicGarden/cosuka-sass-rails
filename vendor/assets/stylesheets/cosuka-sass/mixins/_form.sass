@@ -1,4 +1,6 @@
 @mixin cosuka-simple-form-bootstrap-horizontal($labelWidth:200px, $labelColor:#EFEFEF)
+  @media screen and (max-width: 720px)
+    $labelWidth: 180px
   $inputDefaultMargin: 10px
   label
     width: $labelWidth
@@ -92,6 +94,8 @@
   input
     width: $inputWidth
     font-size: 120%
+    @media screen and (max-width: 720px)
+      width: 100%
   .form-actions
     margin-top: $inputDefaultMargin * 2
   input[type="submit"]
